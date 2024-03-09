@@ -1,6 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-from .models import ToDoList, Item
+from .models import ToDoList
 
 
 # Create your views here.

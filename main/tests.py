@@ -1,6 +1,7 @@
 from django.test import TestCase
 from .models import ToDoList
 
+
 # Create your tests here.
 class ModelTesting(TestCase):
 
@@ -8,6 +9,6 @@ class ModelTesting(TestCase):
         self.list = ToDoList.objects.create(name="fjeo")
 
     def test_todolist_model(self):
-        l = self.list
-        self.assertTrue(isinstance(l, ToDoList))
-        self.assertEquals(str(l), "fjeo")
+        list_obj = self.list
+        self.assertTrue(isinstance(list_obj, ToDoList))
+        self.assertEquals(str(list_obj), "fjeo")
